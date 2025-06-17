@@ -1,4 +1,7 @@
-export const BASE_URL = "http://localhost:8000";
+export const BASE_URL = import.meta.env.PROD
+    ? "https://expense-tracker-7zf5.onrender.com"
+    : "http://localhost:8000";
+
 
 // utils/apiPaths.js
 export const API_PATHS = {
